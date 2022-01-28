@@ -304,11 +304,9 @@ Cdon
 | Slfn4 | In malignant melanoma cells, gene expression is up-regulated in response to interferon alpha. |
 | Trim25 | regulation of antiviral innate immunity |
 | Stk11 | Provides instructions for making an enzyme called serine/threonine kinase 11. This enzyme is a tumor suppressor, which means that it helps keep cells from growing and dividing too fast or in an uncontrolled way. This kinase also promotes a type of programmed cell death known as apoptosis. |
-| Ddx3x
- | The downstream genes of DDX3X-SP1-mediated transactivation include P21, KRAS, and MDM2 which are critical for cancer development and progression. DDX3X also interacts with YY1 to facilitate the transcription of genes involved in WNT/β-catenin signalling  |
+| Ddx3x| The downstream genes of DDX3X-SP1-mediated transactivation include P21, KRAS, and MDM2 which are critical for cancer development and progression. DDX3X also interacts with YY1 to facilitate the transcription of genes involved in WNT/β-catenin signalling  |
 | S100a6 | Growth Factor-Inducible Protein 2A9 (calcium binding protein) |
-| Dnase2a
- | The protein, located in the lysosome, hydrolyzes DNA under acidic conditions and mediates the breakdown of DNA during erythropoiesis and apoptosis. |
+| Dnase2a| The protein, located in the lysosome, hydrolyzes DNA under acidic conditions and mediates the breakdown of DNA during erythropoiesis and apoptosis. |
 | CD44 | The protein encoded by this gene is a cell-surface glycoprotein involved in cell-cell interactions, and may be related to tumor metastasis. |
 
 ### My explanation about the findings
