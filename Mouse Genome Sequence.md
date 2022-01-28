@@ -10,130 +10,7 @@
 | Organism | Mus musculus |
 | source_name | spermatozoa |
 
-# Summary and Files
-
-### KRONA IMAGES
-
-[SRR12329253](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329253&krona=on)
-
-![Untitled](Mouse%20Genome%20Sequence/Untitled.png)
-
-[SRR12329254](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329254&krona=on)
-
-![Untitled](Mouse%20Genome%20Sequence/Untitled%201.png)
-
-[SRR12329255](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329255&krona=on)
-
-![Untitled](Mouse%20Genome%20Sequence/Untitled%202.png)
-
-[SRR12329256](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329256&krona=on)
-
-![Untitled](Mouse%20Genome%20Sequence/Untitled%203.png)
-
-### Before Trimming
-
-### After Trimming
-
-### Alignment Output
-
-```bash
-furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329253 --rg SM:G1 --rg LB:NORMAL_SALINE --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut.fastq.gz  -S ./s_Rep1.sam
-16593473 reads; of these:
-16593473 (100.00%) were unpaired; of these:
-7323478 (44.13%) aligned 0 times
-8333462 (50.22%) aligned exactly 1 time
-936533 (5.64%) aligned >1 times
-55.87% overall alignment rate
-```
-
-```bash
-furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329255 --rg SM:G2 --rg LB:NICOTINE  --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut3.fastq.gz -S ./NCT_Rep1.sam
-17910254 reads; of these:
-17910254 (100.00%) were unpaired; of these:
-8901839 (49.70%) aligned 0 times
-7391604 (41.27%) aligned exactly 1 time
-1616811 (9.03%) aligned >1 times
-50.30% overall alignment rate
-```
-
-```bash
-furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329256 --rg SM:G2 --rg LB:NICOTINE --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut4.fastq.gz -S ./NCT_Rep2.sam
-17913535 reads; of these:
-17913535 (100.00%) were unpaired; of these:
-9176681 (51.23%) aligned 0 times
-7269897 (40.58%) aligned exactly 1 time
-1466957 (8.19%) aligned >1 times
-48.77% overall alignment rate
-```
-
-```bash
-furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools flagstat NCT.bam
-43301859 + 0 in total (QC-passed reads + QC-failed reads)
-7478070 + 0 secondary
-0 + 0 supplementary
-0 + 0 duplicates
-25223339 + 0 mapped (58.25% : N/A)
-0 + 0 paired in sequencing
-0 + 0 read1
-0 + 0 read2
-0 + 0 properly paired (N/A : N/A)
-0 + 0 with itself and mate mapped
-0 + 0 singletons (N/A : N/A)
-0 + 0 with mate mapped to a different chr
-0 + 0 with mate mapped to a different chr (mapQ>=5)
-furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools flagstat SLN.bam
-39545384 + 0 in total (QC-passed reads + QC-failed reads)
-6358438 + 0 secondary
-0 + 0 supplementary
-0 + 0 duplicates
-24898428 + 0 mapped (62.96% : N/A)
-0 + 0 paired in sequencing
-0 + 0 read1
-0 + 0 read2
-0 + 0 properly paired (N/A : N/A)
-0 + 0 with itself and mate mapped
-0 + 0 singletons (N/A : N/A)
-0 + 0 with mate mapped to a different chr
-0 + 0 with mate mapped to a different chr (mapQ>=5)
-```
-
-### Bam multiqc Results
-
-### Normal Bam Result
-
-[multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report.html)
-
-### Merged Bam Result
-
-[merged_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%201.html)
-
-### R files
-
-[kallisto_gene_matrix.pl](Mouse%20Genome%20Sequence/kallisto_gene_matrix.pl)
-
-[top_sig_genes.R](Mouse%20Genome%20Sequence/top_sig_genes.r)
-
-[Tutorial_edgeR.R](Mouse%20Genome%20Sequence/Tutorial_edgeR.r)
-
-[Tutorial_KallistoSleuth.R](Mouse%20Genome%20Sequence/Tutorial_KallistoSleuth.r)
-
-[Tutorial_Part1_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part1_ballgown.r)
-
-[Tutorial_Part2_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part2_ballgown.r)
-
-[Tutorial_Supplementary_R.R](Mouse%20Genome%20Sequence/Tutorial_Supplementary_R.r)
-
-### Output Files
-
-[SleuthResults.pdf](Mouse%20Genome%20Sequence/SleuthResults.pdf)
-
-[Tutorial_Part2_ballgown_output.pdf](Mouse%20Genome%20Sequence/Tutorial_Part2_ballgown_output.pdf)
-
-[Tutorial_Part3_Supplementary_R_output.pdf](Mouse%20Genome%20Sequence/Tutorial_Part3_Supplementary_R_output.pdf)
-
-[myanno.mm10_multianno.tsv](Mouse%20Genome%20Sequence/myanno.mm10_multianno.tsv)
-
-# Data and paper related questions
+## Data and paper related questions
 
 ## De genes Enrichment Output
 
@@ -170,7 +47,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 | GO:0042974 | MF | GO:0042974 | retinoic acid receptor binding | 1/17 | 33/28438 |
 | GO:0003729 | MF | GO:0003729 | mRNA binding | 2/17 | 366/28438 |
 
-[MyGORelatedGenes.csv](Mouse%20Genome%20Sequence/MyGORelatedGenes.csv)
+[MyGORelatedGenes.csv](data/MyGORelatedGenes.csv)
 
 ### Immune Pathway
 
@@ -226,7 +103,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 | LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | 3/19 | 311/27982 | 11.546.151.367.976 | 459.921.696.157.712 |
 | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | 2/19 | 78/27982 | 12.719.778.439.275 | 496.330.946.446.811 |
 
-[MyImmunePathwayRelatedGenes.csv](Mouse%20Genome%20Sequence/MyImmunePathwayRelatedGenes.csv)
+[MyImmunePathwayRelatedGenes.csv](data/MyImmunePathwayRelatedGenes.csv)
 
 ## Variation Enrichment Output
 
@@ -240,7 +117,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 | GO:0099602 | MF | GO:0099602 | neurotransmitter receptor regulator activity | 2/29 | 25/28438 | 296.874.735.960.676 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
 | GO:0030547 | MF | GO:0030547 | signaling receptor inhibitor activity | 2/29 | 37/28438 | 654.080.587.639.407 | 824.141.540.425.653 | 605.885.175.918.609 | Ly6c1/Ly6c2 | 2 |
 
-[MyGORelatedGenes.csv](Mouse%20Genome%20Sequence/MyGORelatedGenes%201.csv)
+[MyGORelatedGenes.csv](data/MyGORelatedGenes%201.csv)
 
 ### Immune Pathway
 
@@ -248,7 +125,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | 3/28 | 24/27982 | 1,79E+08 | 408.977.248.401.737 | 264.257.582.385.121 | Rps29/Zwint/Rps9 | 3 |
 
-[MyImmunePathwayRelatedGenes.csv](Mouse%20Genome%20Sequence/MyImmunePathwayRelatedGenes%201.csv)
+[MyImmunePathwayRelatedGenes.csv](data/MyImmunePathwayRelatedGenes%201.csv)
 
 ```bash
 1700049L16Rik
@@ -287,7 +164,7 @@ Mir101c
 Cdon
 ```
 
-![venn_result5347.png](Mouse%20Genome%20Sequence/venn_result5347.png)
+![venn_result5347.png](data/venn_result5347.png)
 
 ### Important Genes Brief Explanation
 
@@ -304,32 +181,42 @@ Cdon
 | Slfn4 | In malignant melanoma cells, gene expression is up-regulated in response to interferon alpha. |
 | Trim25 | regulation of antiviral innate immunity |
 | Stk11 | Provides instructions for making an enzyme called serine/threonine kinase 11. This enzyme is a tumor suppressor, which means that it helps keep cells from growing and dividing too fast or in an uncontrolled way. This kinase also promotes a type of programmed cell death known as apoptosis. |
-| Ddx3x| The downstream genes of DDX3X-SP1-mediated transactivation include P21, KRAS, and MDM2 which are critical for cancer development and progression. DDX3X also interacts with YY1 to facilitate the transcription of genes involved in WNT/β-catenin signalling  |
+| Ddx3x
+ | The downstream genes of DDX3X-SP1-mediated transactivation include P21, KRAS, and MDM2 which are critical for cancer development and progression. DDX3X also interacts with YY1 to facilitate the transcription of genes involved in WNT/β-catenin signalling |
 | S100a6 | Growth Factor-Inducible Protein 2A9 (calcium binding protein) |
-| Dnase2a| The protein, located in the lysosome, hydrolyzes DNA under acidic conditions and mediates the breakdown of DNA during erythropoiesis and apoptosis. |
+| Dnase2a
+ | The protein, located in the lysosome, hydrolyzes DNA under acidic conditions and mediates the breakdown of DNA during erythropoiesis and apoptosis. |
 | CD44 | The protein encoded by this gene is a cell-surface glycoprotein involved in cell-cell interactions, and may be related to tumor metastasis. |
+| Paf1 | The PAF1 complex interacts with RNA polymerase II and plays a role in transcription elongation as well as histone modifications including ubiquitylation and methylation |
+| Cof5a | enzyme of the mitochondrial respiratory chain. |
 
 ### My explanation about the findings
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%204.png)
+![Untitled](data/Untitled.png)
 
-After the differentially expressioned genes and  variated genes enriched genes and their functions uniting under 3 diffirent and connected functions.
+After analyzing the differentially expressioned genes and  variated genes enriched genes they are uniting under 3 diffirent group according to functions.
 
-According these imformation these functions are Cell fate controll and apoptosis , Cell growth factors and controls, Cariokinesis and tumor supressors.
+These functions are Cell fate control and apoptosis , Cell growth factors and controls, carcinogenesis and tumor suppressors.
 
-And also i found these genes union under a pathway which is WNT/ß -cateinin pathway.
+And also i found these genes connected under a pathway which is WNT/ß -cateinin pathway.
 
-Cav2 gene effect apoptosis and cellular growth and also Klf6 gene has functions as  tumor suppressors. Down regulaton of this gene could be main reason of nicotine effect in cigarette smoke on carcinogenesis. This substance has potential role on broke one of these mechanisms or both. They are crucial even them self alone for establishing carcinogenesis. We can see in table there is also fer has an effect on cell growth mechanizm this is also proving for cav2 gene's diferential expression truthness which since this gene has also effect on growth mechanizm of cell. 
+Wnt9a gene have been implicated in oncogenesis and in several developmental processes, including regulation of cell fate and patterning during embryogenesis. Also Cav2 gene effect apoptosis and cellular growth and also Klf6 gene has functions as  tumor suppressors. Down regulaton of this gene could be main reason of nicotine effect in cigarette smoke on carcinogenesis. This substance has potential role on broke one of these mechanisms or both. They are crucial even them self alone for establishing carcinogenesis. We can see in table there is also fer has an effect on cell growth mechanizm this is also proving for cav2 gene's diferential expression truthness which since this gene has also effect on growth mechanizm of cell. 
 
 Moreover Axin2 gene has an effect on regulation of ß-cateninin mechanism since ß-cateinin has an active role of heteroygosity and this pathway also has an important role for patterning and fate determination of cell. And also this pathway’s relation with colon cancer and melanoma has been identified.
 
 Wnt/ß-cateinin pathway is implicated with tissue homeostasis, and tissue regeneration. In human cancers this pathway highly activated.
 
+![Untitled](data/Untitled%201.png)
+
 Also β-catenin related with NF-κB pathway activity. The NF-κB pathway regulation that plays a key role in regulating the immune response to infection. Incorrect regulation of NF-κB has been linked to cancer, inflammatory and [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_diseases), [septic shock](https://en.wikipedia.org/wiki/Septic_shock), [viral infection](https://en.wikipedia.org/wiki/Viral_infection), and improper immune development.
 
-In de genes enrichment i found some results that pointing directly nicotine toxisity.
+In de genes enrichment i found some results that pointing directly nicotine toxisity with this explanation Excessive accumulation of acetylcholine (ACh) at the neuromuscular junctions and synapses causes symptoms of nicotinic toxicity.
+
+Variated gene enrichment results are also related with NF-kB pathway;  *[Mj*RPS27 might activate the NF-κB pathway and regulate the expression of AMPs](https://www.frontiersin.org/articles/10.3389/fimmu.2019.02763/full)
 
 ### Comparation of my results and paper
+
+![Untitled](data/Untitled%202.png)
 
 > AKT/GSK3α/β signaling is involved in behavioral abnormalities mediated by the second class of dopamine receptors (D2s). So the expression level of protein AKT, GSK3α/β and the D2s were detected by western blot.
 > 
@@ -340,11 +227,11 @@ I found similar results but i coulnt come up with whole result like  the paper�
 
 ### Where did i get this data?
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%205.png)
+![Untitled](data/Untitled%203.png)
 
 I get both normal and data from same prjna , PRJNA648845; GEO: GSE155145
 
-The project data has 4 samples; 2 for control and 2 for nicotine threated. They growth a male mouse and later growthing process they collect spermatozoa cells. And send them for RNA-seq with Illumina. All of these sample has single end and has 100bp. 
+The project data has 4 samples; 2 for control and 2 for nicotine threated. They growth a male mouse and later growthing process they collect spermatozoa cells. And send them for RNA-seq with Illumina. All of these sample has single end and  100bp. 
 
 After i checked this samples under fastqc and krona tool i found  that this data has highly contaminated with homonidae,clamidia. Musmusculus part of data averagely %55, GC content was not stable, some adapter contamination involved and also much of duplicated sequences included. After i cleaned the data with Truseq adapters by Flexbar. I fixed some of these problems. 
 
@@ -442,7 +329,7 @@ multiqc .
 open multiqc_report.html
 ```
 
-[default_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%202.html)
+[default_multiqc_report.html](data/multiqc_report.html)
 
 | Sample Name | % Dups | % GC | M Seqs |
 | --- | --- | --- | --- |
@@ -453,21 +340,21 @@ open multiqc_report.html
 
 ### Results
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1.png)
+![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1.png)
 
-![mqc_fastqc_overrepresented_sequences_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_overrepresented_sequences_plot_1.png)
+![mqc_fastqc_overrepresented_sequences_plot_1.png](data/mqc_fastqc_overrepresented_sequences_plot_1.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1.png)
 
 ## Trim DATA
 
@@ -509,31 +396,31 @@ multiqc . -p
 
 ```
 
-[trimmed_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%203.html)
+[trimmed_multiqc_report.html](data/multiqc_report%201.html)
 
 ### Results
 
-![mqc_fastqc_sequence_length_distribution_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_length_distribution_plot_1.png)
+![mqc_fastqc_sequence_length_distribution_plot_1.png](data/mqc_fastqc_sequence_length_distribution_plot_1.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1%201.png)
+![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1%201.png)
 
-![mqc_fastqc_overrepresented_sequences_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_overrepresented_sequences_plot_1%201.png)
+![mqc_fastqc_overrepresented_sequences_plot_1.png](data/mqc_fastqc_overrepresented_sequences_plot_1%201.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1%201.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1%201.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1%201.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1%201.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts%201.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts%201.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Percentages.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Percentages.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Percentages.png](data/mqc_fastqc_per_sequence_gc_content_plot_Percentages.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1%201.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1%201.png)
 
-![mqc_fastqc_sequence_counts_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1.png)
+![mqc_fastqc_sequence_counts_plot_1.png](data/mqc_fastqc_sequence_counts_plot_1.png)
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc%201.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc%201.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1%201.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1%201.png)
 
 ### Trimming with Flexbar2
 
@@ -809,7 +696,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 
 ### Report
 
-[merged_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%201.html)
+[merged_multiqc_report.html](data/multiqc_report%202.html)
 
 ```bash
 mkdir report
@@ -821,23 +708,23 @@ multiqc .
 
 ### Results
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc%202.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc%202.png)
 
-![mqc_fastqc_sequence_counts_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1%201.png)
+![mqc_fastqc_sequence_counts_plot_1.png](data/mqc_fastqc_sequence_counts_plot_1%201.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1%202.png)
+![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1%202.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1%202.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1%202.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1%202.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1%202.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts%202.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts%202.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1%202.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1%202.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1%202.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1%202.png)
 
-![mqc_fastqc_sequence_length_distribution_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_length_distribution_plot_1%201.png)
+![mqc_fastqc_sequence_length_distribution_plot_1.png](data/mqc_fastqc_sequence_length_distribution_plot_1%201.png)
 
 ## Stringtie Annotation
 
@@ -922,7 +809,7 @@ ENSMUSG00000103025      Gm37686 1       -       3464977 3467285 0.227314        
 
 ### Creating expression matrix
 
-[stringtie_expression_matrix.pl](Mouse%20Genome%20Sequence/stringtie_expression_matrix.pl)
+[stringtie_expression_matrix.pl](data/stringtie_expression_matrix.pl)
 
 ```bash
 cd $RNA_HOME/expression/$DATA_NAME/stringtie/ref_only/
@@ -1015,7 +902,7 @@ wget https://raw.githubusercontent.com/griffithlab/rnaseq_tutorial/master/script
 chmod +x Tutorial_Part1_balgown.R
 ```
 
-[Tutorial_Part1_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part1_ballgown%201.r)
+[Tutorial_Part1_ballgown.R](data/Tutorial_Part1_ballgown.r)
 
 ```bash
 **grep -v feature SLN_vs_NCT_gene_results.tsv | wc -l**
@@ -1174,17 +1061,17 @@ cut -f 2 $RNA_HOME/de/$DATA_NAME/htseq_counts/DE_genes.txt | sort > htseq_counts
 
 ```
 
-[Tutorial_edgeR.R](Mouse%20Genome%20Sequence/Tutorial_edgeR%201.r)
+[Tutorial_edgeR.R](data/Tutorial_edgeR.r)
 
-[DE_genes.txt](Mouse%20Genome%20Sequence/DE_genes.txt)
+[DE_genes.txt](data/DE_genes.txt)
 
-[ballgown_DE_gene_symbols.txt](Mouse%20Genome%20Sequence/ballgown_DE_gene_symbols.txt)
+[ballgown_DE_gene_symbols.txt](data/ballgown_DE_gene_symbols.txt)
 
-[htseq_counts_edgeR_DE_gene_symbols.txt](Mouse%20Genome%20Sequence/htseq_counts_edgeR_DE_gene_symbols.txt)
+[htseq_counts_edgeR_DE_gene_symbols.txt](data/htseq_counts_edgeR_DE_gene_symbols.txt)
 
 ### Result as Venn Diagram
 
-![edgeR_vs_balgown.jpeg](Mouse%20Genome%20Sequence/edgeR_vs_balgown.jpeg)
+![edgeR_vs_balgown.jpeg](data/edgeR_vs_balgown.jpeg)
 
 ## Kallisto
 
@@ -1305,7 +1192,7 @@ chmod +x kallisto_gene_matrix.pl
 ./kallisto_gene_matrix.pl --gtf_file=$REF_GTF  --kallisto_transcript_matrix_in=transcript_tpms_all_samples.tsv --kallisto_transcript_matrix_out=gene_tpms_all_samples.tsv
 ```
 
-[Tutorial_comparisons.R](Mouse%20Genome%20Sequence/Tutorial_comparisons.r)
+[Tutorial_comparisons.R](data/Tutorial_comparisons.r)
 
 ```bash
 cd $RNA_HOME/expression/$DATA_NAME
@@ -1314,7 +1201,7 @@ chmod +x Tutorial_comparisons.R
 
 ```
 
-[Tutorial_comparisons.pdf](Mouse%20Genome%20Sequence/Tutorial_comparisons.pdf)
+[Tutorial_comparisons.pdf](data/Tutorial_comparisons.pdf)
 
 ### Make custom DB
 
@@ -1363,11 +1250,11 @@ chmod +x Tutorial_KallistoSleuth.R
 Rscript -e "remotes::install_github("pachterlab/sleuth#260")"
 ```
 
-[SleuthResults.pdf](Mouse%20Genome%20Sequence/SleuthResults%201.pdf)
+[SleuthResults.pdf](data/SleuthResults.pdf)
 
-[Tutorial_comparisons.pdf](Mouse%20Genome%20Sequence/Tutorial_comparisons%201.pdf)
+[Tutorial_comparisons.pdf](data/Tutorial_comparisons%201.pdf)
 
-[myanno.mm10_multianno.tsv](Mouse%20Genome%20Sequence/myanno.mm10_multianno.tsv)
+[myanno.mm10_multianno.tsv](data/myanno.mm10_multianno.tsv)
 
 ## **Reference Guided Transcript Assembly**
 
@@ -1830,9 +1717,9 @@ Chr     Start   End     Ref     Alt     Func.refGene    Gene.refGene    GeneDeta
 
 ## Gene Enrichment
 
-[top_sig_genes.R](Mouse%20Genome%20Sequence/top_sig_genes%201.r)
+[top_sig_genes.R](data/top_sig_genes.r)
 
-[gene_enrichment.R](Mouse%20Genome%20Sequence/gene_enrichment.r)
+[gene_enrichment.R](data/gene_enrichment.r)
 
 ```bash
 cd $RNA_HOME/de/$DATA_NAME/ballgown/ref_only/enrichment
@@ -1864,40 +1751,163 @@ write.csv(keggEnrich,"MyKEGGRelatedGenes.csv")
 
 ### Plots
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%206.png)
+![Untitled](data/Untitled%204.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%207.png)
+![Untitled](data/Untitled%205.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%208.png)
+![Untitled](data/Untitled%206.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%209.png)
+![Untitled](data/Untitled%207.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2010.png)
+![Untitled](data/Untitled%208.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2011.png)
+![Untitled](data/Untitled%209.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2012.png)
+![Untitled](data/Untitled%2010.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2013.png)
+![Untitled](data/Untitled%2011.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2014.png)
+![Untitled](data/Untitled%2012.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2015.png)
+![Untitled](data/Untitled%2013.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2016.png)
+![Untitled](data/Untitled%2014.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2017.png)
+![Untitled](data/Untitled%2015.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2018.png)
+![Untitled](data/Untitled%2016.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2019.png)
+![Untitled](data/Untitled%2017.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2020.png)
+![Untitled](data/Untitled%2018.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2021.png)
+![Untitled](data/Untitled%2019.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2022.png)
+![Untitled](data/Untitled%2020.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2023.png)
+![Untitled](data/Untitled%2021.png)
 
-![Untitled](Mouse%20Genome%20Sequence/Untitled%2024.png)
+![Untitled](data/Untitled%2022.png)
+
+## Summary and Files
+
+### KRONA IMAGES
+
+[SRR12329253](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329253&krona=on)
+
+![Untitled](data/Untitled%2023.png)
+
+[SRR12329254](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329254&krona=on)
+
+![Untitled](data/Untitled%2024.png)
+
+[SRR12329255](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329255&krona=on)
+
+![Untitled](data/Untitled%2025.png)
+
+[SRR12329256](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329256&krona=on)
+
+![Untitled](data/Untitled%2026.png)
+
+### Before Trimming
+
+### After Trimming
+
+### Alignment Output
+
+```bash
+furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329253 --rg SM:G1 --rg LB:NORMAL_SALINE --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut.fastq.gz  -S ./s_Rep1.sam
+16593473 reads; of these:
+16593473 (100.00%) were unpaired; of these:
+7323478 (44.13%) aligned 0 times
+8333462 (50.22%) aligned exactly 1 time
+936533 (5.64%) aligned >1 times
+55.87% overall alignment rate
+```
+
+```bash
+furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329255 --rg SM:G2 --rg LB:NICOTINE  --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut3.fastq.gz -S ./NCT_Rep1.sam
+17910254 reads; of these:
+17910254 (100.00%) were unpaired; of these:
+8901839 (49.70%) aligned 0 times
+7391604 (41.27%) aligned exactly 1 time
+1616811 (9.03%) aligned >1 times
+50.30% overall alignment rate
+```
+
+```bash
+furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice$ hisat2 -p 8 --rg-id=SRR12329256 --rg SM:G2 --rg LB:NICOTINE --rg PU:CXX1234-ACTGAC.1 -x $REF_INDEX --dta --rna-strandness RF -U $DATA_DIR/cleaned/flexbarOut4.fastq.gz -S ./NCT_Rep2.sam
+17913535 reads; of these:
+17913535 (100.00%) were unpaired; of these:
+9176681 (51.23%) aligned 0 times
+7269897 (40.58%) aligned exactly 1 time
+1466957 (8.19%) aligned >1 times
+48.77% overall alignment rate
+```
+
+```bash
+furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools flagstat NCT.bam
+43301859 + 0 in total (QC-passed reads + QC-failed reads)
+7478070 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+25223339 + 0 mapped (58.25% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools flagstat SLN.bam
+39545384 + 0 in total (QC-passed reads + QC-failed reads)
+6358438 + 0 secondary
+0 + 0 supplementary
+0 + 0 duplicates
+24898428 + 0 mapped (62.96% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+```
+
+### Bam multiqc Results
+
+### Normal Bam Result
+
+[multiqc_report.html](data/multiqc_report%203.html)
+
+### Merged Bam Result
+
+[merged_multiqc_report.html](data/multiqc_report%202.html)
+
+### R files
+
+[kallisto_gene_matrix.pl](data/kallisto_gene_matrix.pl)
+
+[top_sig_genes.R](data/top_sig_genes%201.r)
+
+[Tutorial_edgeR.R](data/Tutorial_edgeR%201.r)
+
+[Tutorial_KallistoSleuth.R](data/Tutorial_KallistoSleuth.r)
+
+[Tutorial_Part1_ballgown.R](data/Tutorial_Part1_ballgown%201.r)
+
+[Tutorial_Part2_ballgown.R](data/Tutorial_Part2_ballgown.r)
+
+[Tutorial_Supplementary_R.R](data/Tutorial_Supplementary_R.r)
+
+### Output Files
+
+[SleuthResults.pdf](data/SleuthResults%201.pdf)
+
+[Tutorial_Part2_ballgown_output.pdf](data/Tutorial_Part2_ballgown_output.pdf)
+
+[Tutorial_Part3_Supplementary_R_output.pdf](data/Tutorial_Part3_Supplementary_R_output.pdf)
+
+[myanno.mm10_multianno.tsv](data/myanno.mm10_multianno.tsv)

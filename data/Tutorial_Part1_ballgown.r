@@ -13,7 +13,7 @@ library(devtools)
 
 # Load phenotype data from a file we saved in the current working directory
 pheno_data = read.csv("SLN_vs_NCT.csv")
-fc_treshold = 3
+fc_treshold = 1
 # Load ballgown data structure and save it to a variable "bg"
 bg = ballgown(samples=as.vector(pheno_data$path), pData=pheno_data)
 
@@ -56,14 +56,9 @@ write.table(results_genes, "SLN_vs_NCT_gene_results_filtered.tsv", sep="\t", quo
 sig_transcripts = subset(results_transcripts, results_transcripts$pval<0.05)
 sig_genes = subset(results_genes, results_genes$pval<0.05)
 sig_genes = subset(sig_genes, abs(sig_genes$fc)>fc_treshold)
-arranged_sig_genes = arrange(sig_genes,pval)
 head(sig_genes)
-dim(sig_genes)
-head(arranged_sig_genes,20)
 # Save diferentially expressed genes for plotting
 save(sig_genes, file='sig_genes.rda')
-save(arranged_sig_genes, file='arranged_sig_genes.rda')
-
 # Output the signifant gene results to a pair of tab delimited files
 write.table(sig_transcripts, "SLN_vs_NCT_transcript_results_sig.tsv", sep="\t", quote=FALSE, row.names = FALSE)
 write.table(sig_genes, "SLN_vs_NCT_gene_results_sig.tsv", sep="\t", quote=FALSE, row.names = FALSE)
