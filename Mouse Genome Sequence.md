@@ -11,7 +11,8 @@
 | source_name | spermatozoa |
 
 ## Data and paper related questions
-
+## Top 20 DE Genes
+[top20_genes.tsv](../main/data/top20_genes.tsv)
 ## De genes Enrichment Output
 
 ### Gene Ontology
