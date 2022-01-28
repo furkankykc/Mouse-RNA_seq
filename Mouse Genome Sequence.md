@@ -610,22 +610,10 @@ nohup hisat2 -p 8 --rg-id=SRR12329256 --rg SM:G2 --rg LB:NICOTINE --rg PU:CXX123
 
 | SSR NO | UnTrimmed | Trimmed  | Trimmed_2 |
 | --- | --- | --- | --- |
-| SRR12329253 | 49.93% aligned exactly 1 time
-55.50% overall alignment rate | 50.22% aligned exactly 1 time
-55.87% overall alignment rate | 50.25% aligned exactly 1 time
-55.85% overall alignment rate |
-| SRR12329254 | 50.25% aligned exactly 1 time
-55.96% overall alignment rate | 50.27% aligned exactly 1 time
-56.01% overall alignment rate | 50.31% aligned exactly 1 time
-56.04% overall alignment rate |
-| SRR12329255 | 41.20% aligned exactly 1 time
-50.21% overall alignment rate | 41.27% aligned exactly 1 time
-50.30% overall alignment rate | 41.27% aligned exactly 1 time
-50.29% overall alignment rate |
-| SRR12329256 | 40.57% aligned exactly 1 time
-48.75% overall alignment rate |  40.58% aligned exactly 1 time
-48.77% overall alignment rate | 40.60% aligned exactly 1 time
-48.78% overall alignment rate |
+| SRR12329253 | 49.93% aligned exactly 1 time 55.50% overall alignment rate | 50.22% aligned exactly 1 time 55.87% overall alignment rate | 50.25% aligned exactly 1 time 55.85% overall alignment rate |
+| SRR12329254 | 50.25% aligned exactly 1 time 55.96% overall alignment rate | 50.27% aligned exactly 1 time 56.01% overall alignment rate | 50.31% aligned exactly 1 time 56.04% overall alignment rate |
+| SRR12329255 | 41.20% aligned exactly 1 time 50.21% overall alignment rate | 41.27% aligned exactly 1 time 50.30% overall alignment rate | 41.27% aligned exactly 1 time 50.29% overall alignment rate |
+| SRR12329256 | 40.57% aligned exactly 1 time 48.75% overall alignment rate |  40.58% aligned exactly 1 time 48.77% overall alignment rate | 40.60% aligned exactly 1 time 48.78% overall alignment rate |
 
 ### Convert sam files to bam files
 
