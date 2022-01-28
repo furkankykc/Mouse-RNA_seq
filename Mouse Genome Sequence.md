@@ -16,19 +16,19 @@
 
 [SRR12329253](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329253&krona=on)
 
-![Untitled](data/Untitled.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled.png)
 
 [SRR12329254](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329254&krona=on)
 
-![Untitled](data/Untitled%201.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%201.png)
 
 [SRR12329255](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329255&krona=on)
 
-![Untitled](data/Untitled%202.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%202.png)
 
 [SRR12329256](https://trace.ncbi.nlm.nih.gov/Traces/sra/?run=SRR12329256&krona=on)
 
-![Untitled](data/Untitled%203.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%203.png)
 
 ### Before Trimming
 
@@ -101,53 +101,195 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 
 ### Normal Bam Result
 
-[multiqc_report.html](data/multiqc_report.html)
+[multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report.html)
 
 ### Merged Bam Result
 
-[merged_multiqc_report.html](data/multiqc_report%201.html)
+[merged_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%201.html)
 
 ### R files
 
-[kallisto_gene_matrix.pl](data/kallisto_gene_matrix.pl)
+[kallisto_gene_matrix.pl](Mouse%20Genome%20Sequence/kallisto_gene_matrix.pl)
 
-[top_sig_genes.R](data/top_sig_genes.r)
+[top_sig_genes.R](Mouse%20Genome%20Sequence/top_sig_genes.r)
 
-[Tutorial_edgeR.R](data/Tutorial_edgeR.r)
+[Tutorial_edgeR.R](Mouse%20Genome%20Sequence/Tutorial_edgeR.r)
 
-[Tutorial_KallistoSleuth.R](data/Tutorial_KallistoSleuth.r)
+[Tutorial_KallistoSleuth.R](Mouse%20Genome%20Sequence/Tutorial_KallistoSleuth.r)
 
-[Tutorial_Part1_ballgown.R](data/Tutorial_Part1_ballgown.r)
+[Tutorial_Part1_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part1_ballgown.r)
 
-[Tutorial_Part2_ballgown.R](data/Tutorial_Part2_ballgown.r)
+[Tutorial_Part2_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part2_ballgown.r)
 
-[Tutorial_Supplementary_R.R](data/Tutorial_Supplementary_R.r)
+[Tutorial_Supplementary_R.R](Mouse%20Genome%20Sequence/Tutorial_Supplementary_R.r)
 
 ### Output Files
 
-[SleuthResults.pdf](data/SleuthResults.pdf)
+[SleuthResults.pdf](Mouse%20Genome%20Sequence/SleuthResults.pdf)
 
-[Tutorial_Part2_ballgown_output.pdf](data/Tutorial_Part2_ballgown_output.pdf)
+[Tutorial_Part2_ballgown_output.pdf](Mouse%20Genome%20Sequence/Tutorial_Part2_ballgown_output.pdf)
 
-[Tutorial_Part3_Supplementary_R_output.pdf](data/Tutorial_Part3_Supplementary_R_output.pdf)
+[Tutorial_Part3_Supplementary_R_output.pdf](Mouse%20Genome%20Sequence/Tutorial_Part3_Supplementary_R_output.pdf)
 
-[myanno.mm10_multianno.tsv](data/myanno.mm10_multianno.tsv)
+[myanno.mm10_multianno.tsv](Mouse%20Genome%20Sequence/myanno.mm10_multianno.tsv)
 
 # Data and paper related questions
 
-### My explanation about the findings
+## De genes Enrichment Output
 
-I found these genes from one of our pipelines according to these genes.
+### Gene Ontology
 
-Cav2 gene effect apoptosis and cellular growth and also Klf6 gene has functions as a tumor suppressors. Down regulaton of this gene could be main reason of nicotine effect in cigarette smoke on carcinogenesis. Until now this signature of these two gene carries out canserous potential as they have effect on apoptosis which is cells presense self killing mechanizm and cellular growth. if this substance has potential role on broke one of these mechanisms or both. They are crucial even them self alone for establishing carcinogenesis. We can see in table there is also fer has an effect on cell growth mechanizm this is also proving for cav2 gene's diferential expression truthness which since this gene has also effect on growth mechanizm of cell. 
+|  | ONTOLOGY | ID | Description | GeneRatio | BgRatio |
+| --- | --- | --- | --- | --- | --- |
+| GO:0032331 | BP | GO:0032331 | negative regulation of chondrocyte differentiation | 2/18 | 24/29008 |
+| GO:0061037 | BP | GO:0061037 | negative regulation of cartilage development | 2/18 | 31/29008 |
+| GO:0048306 | MF | GO:0048306 | calcium-dependent protein binding | 2/17 | 95/28438 |
+| GO:0050786 | MF | GO:0050786 | RAGE receptor binding | 1/17 | 10/28438 |
+| GO:0098879 | MF | GO:0098879 | structural constituent of postsynaptic specialization | 1/17 | 10/28438 |
+| GO:0034511 | MF | GO:0034511 | U3 snoRNA binding | 1/17 | 11/28438 |
+| GO:0097677 | MF | GO:0097677 | STAT family protein binding | 1/17 | 11/28438 |
+| GO:0044548 | MF | GO:0044548 | S100 protein binding | 1/17 | 14/28438 |
+| GO:0047372 | MF | GO:0047372 | acylglycerol lipase activity | 1/17 | 14/28438 |
+| GO:0005523 | MF | GO:0005523 | tropomyosin binding | 1/17 | 15/28438 |
+| GO:0015556 | MF | GO:0015556 | C4-dicarboxylate transmembrane transporter activity | 1/17 | 15/28438 |
+| GO:0030228 | MF | GO:0030228 | lipoprotein particle receptor activity | 1/17 | 16/28438 |
+| GO:0015172 | MF | GO:0015172 | acidic amino acid transmembrane transporter activity | 1/17 | 17/28438 |
+| GO:0070034 | MF | GO:0070034 | telomerase RNA binding | 1/17 | 17/28438 |
+| GO:0030169 | MF | GO:0030169 | low-density lipoprotein particle binding | 1/17 | 20/28438 |
+| GO:0099186 | MF | GO:0099186 | structural constituent of postsynapse | 1/17 | 20/28438 |
+| GO:0046965 | MF | GO:0046965 | retinoid X receptor binding | 1/17 | 22/28438 |
+| GO:0001227 | MF | GO:0001227 | DNA-binding transcription repressor activity, RNA polymerase II-specific | 2/17 | 328/28438 |
+| GO:0061629 | MF | GO:0061629 | RNA polymerase II-specific DNA-binding transcription factor binding | 2/17 | 329/28438 |
+| GO:0001217 | MF | GO:0001217 | DNA-binding transcription repressor activity | 2/17 | 330/28438 |
+| GO:0005310 | MF | GO:0005310 | dicarboxylic acid transmembrane transporter activity | 1/17 | 29/28438 |
+| GO:0071813 | MF | GO:0071813 | lipoprotein particle binding | 1/17 | 30/28438 |
+| GO:0071814 | MF | GO:0071814 | protein-lipid complex binding | 1/17 | 30/28438 |
+| GO:0098918 | MF | GO:0098918 | structural constituent of synapse | 1/17 | 30/28438 |
+| GO:0030515 | MF | GO:0030515 | snoRNA binding | 1/17 | 32/28438 |
+| GO:0016831 | MF | GO:0016831 | carboxy-lyase activity | 1/17 | 33/28438 |
+| GO:0042974 | MF | GO:0042974 | retinoic acid receptor binding | 1/17 | 33/28438 |
+| GO:0003729 | MF | GO:0003729 | mRNA binding | 2/17 | 366/28438 |
 
-Moreover Axin2 gene has an effect on regulation of ß-cateninin mechanism since ß-cateinin has an active role of heteroygosity and this pathway also has an important role for patterning and fate determination of cell. And also this pathway’s relation with colon cancer and melanoma has been identified.
+[MyGORelatedGenes.csv](Mouse%20Genome%20Sequence/MyGORelatedGenes.csv)
 
-Ccnd2 genes expression shows us tumor suppressor protein Rb’s phosporilated in other word activated since there was no tumor there is no reason for this activation of suppressor protein .
+### Immune Pathway
 
-β-catenin regulates NF-κB activity
+|  | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust |
+| --- | --- | --- | --- | --- | --- | --- |
+| LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | 4/19 | 232/27982 | 1,62E+09 | 162.133.005.763.331 |
+| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | 4/19 | 238/27982 | 1,79E+09 | 162.133.005.763.331 |
+| LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | 4/19 | 278/27982 | 3,29E+09 | 162.133.005.763.331 |
+| GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | 2/19 | 13/27982 | 3,39E+09 | 162.133.005.763.331 |
+| LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | 3/19 | 108/27982 | 5,18E+09 | 16.505.253.500.348 |
+| LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | 3/19 | 108/27982 | 5,18E+09 | 16.505.253.500.348 |
+| LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | 2/19 | 22/27982 | 100.087.066.057.948 | 225.660.143.606.635 |
+| LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | 2/19 | 23/27982 | 109.574.787.466.472 | 225.660.143.606.635 |
+| MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | 2/19 | 23/27982 | 109.574.787.466.472 | 225.660.143.606.635 |
+| GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | 2/19 | 25/27982 | 129.825.396.426.411 | 225.660.143.606.635 |
+| MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | 2/19 | 25/27982 | 129.825.396.426.411 | 225.660.143.606.635 |
+| LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | 2/19 | 28/27982 | 163.381.419.354.902 | 255.696.714.305.104 |
+| MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | 2/19 | 31/27982 | 200.741.108.450.559 | 255.696.714.305.104 |
+| LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | 3/19 | 172/27982 | 205.694.496.361.179 | 255.696.714.305.104 |
+| LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | 2/19 | 32/27982 | 214.037.178.197.889 | 255.696.714.305.104 |
+| LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | 2/19 | 34/27982 | 241.890.473.519.466 | 255.696.714.305.104 |
+| LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | 2/19 | 35/27982 | 256.446.665.904.636 | 255.696.714.305.104 |
+| LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | 3/19 | 188/27982 | 267.165.851.354.928 | 255.696.714.305.104 |
+| LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | 3/19 | 192/27982 | 284.191.830.283.576 | 255.696.714.305.104 |
+| GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
+| GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
+| LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
+| LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | 2/19 | 41/27982 | 352.564.970.955.604 | 255.696.714.305.104 |
+| MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | 2/19 | 41/27982 | 352.564.970.955.604 | 255.696.714.305.104 |
+| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | 3/19 | 207/27982 | 35.425.869.349.625 | 255.696.714.305.104 |
+| LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | 2/19 | 42/27982 | 370.043.412.778.939 | 255.696.714.305.104 |
+| LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | 2/19 | 43/27982 | 387.937.263.978.706 | 255.696.714.305.104 |
+| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | 3/19 | 215/27982 | 395.795.315.809.214 | 255.696.714.305.104 |
+| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | 3/19 | 215/27982 | 395.795.315.809.214 | 255.696.714.305.104 |
+| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | 3/19 | 216/27982 | 401.197.773.491.271 | 255.696.714.305.104 |
+| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | 3/19 | 224/27982 | 446.136.878.457.423 | 268.639.778.576.479 |
+| GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | 2/19 | 47/27982 | 463.656.521.601.664 | 268.639.778.576.479 |
+| LIT_MM_GENNET_FP-DMRT5_UP_Entrez | LIT_MM_GENNET_FP-DMRT5_UP_Entrez | LIT_MM_GENNET_FP-DMRT5_UP_Entrez | 2/19 | 47/27982 | 463.656.521.601.664 | 268.639.778.576.479 |
+| MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | 2/19 | 49/27982 | 503.995.305.816.013 | 28.342.324.256.477 |
+| GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | 2/19 | 54/27982 | 612.040.421.471.533 | 334.348.938.815.306 |
+| LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | 2/19 | 57/27982 | 681.783.036.602.556 | 346.045.913.474.297 |
+| LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | 3/19 | 260/27982 | 688.254.548.398.153 | 346.045.913.474.297 |
+| LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | 3/19 | 260/27982 | 688.254.548.398.153 | 346.045.913.474.297 |
+| LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | 2/19 | 58/27982 | 705.846.790.036.484 | 346.045.913.474.297 |
+| LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | 2/19 | 59/27982 | 730.317.807.667.471 | 349.091.912.065.051 |
+| MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | 2/19 | 62/27982 | 806.169.394.501.984 | 375.950.215.192.145 |
+| MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | 2/19 | 64/27982 | 858.764.187.078.662 | 390.942.172.784.381 |
+| LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | 2/19 | 66/27982 | 912.975.934.855.998 | 396.729.542.601.061 |
+| REACTOME_MM_ARR3_PATHWAY_Entrez | REACTOME_MM_ARR3_PATHWAY_Entrez | REACTOME_MM_ARR3_PATHWAY_Entrez | 2/19 | 66/27982 | 912.975.934.855.998 | 396.729.542.601.061 |
+| LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | 2/19 | 67/27982 | 940.686.910.404.564 | 399.687.416.154.117 |
+| LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | 2/19 | 71/27982 | 10.555.531.187.857 | 438.742.948.503.971 |
+| LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | 3/19 | 309/27982 | 113.338.320.980.832 | 459.921.696.157.712 |
+| LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | 3/19 | 311/27982 | 11.546.151.367.976 | 459.921.696.157.712 |
+| LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | 2/19 | 78/27982 | 12.719.778.439.275 | 496.330.946.446.811 |
 
-More than one genes are showing us the NF-κB pathway regulation that plays a key role in regulating the immune response to infection. Incorrect regulation of NF-κB has been linked to cancer, inflammatory and [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_diseases), [septic shock](https://en.wikipedia.org/wiki/Septic_shock), [viral infection](https://en.wikipedia.org/wiki/Viral_infection), and improper immune development.
+[MyImmunePathwayRelatedGenes.csv](Mouse%20Genome%20Sequence/MyImmunePathwayRelatedGenes.csv)
+
+## Variation Enrichment Output
+
+### Gene Ontology
+
+|  | ONTOLOGY | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust | qvalue | geneID | Count |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| GO:0030550 | MF | GO:0030550 | acetylcholine receptor inhibitor activity | 2/29 | 15/28438 | 104.565.565.789.105 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
+| GO:0033130 | MF | GO:0033130 | acetylcholine receptor binding | 2/29 | 21/28438 | 208.338.756.652.197 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
+| GO:0030548 | MF | GO:0030548 | acetylcholine receptor regulator activity | 2/29 | 25/28438 | 296.874.735.960.676 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
+| GO:0099602 | MF | GO:0099602 | neurotransmitter receptor regulator activity | 2/29 | 25/28438 | 296.874.735.960.676 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
+| GO:0030547 | MF | GO:0030547 | signaling receptor inhibitor activity | 2/29 | 37/28438 | 654.080.587.639.407 | 824.141.540.425.653 | 605.885.175.918.609 | Ly6c1/Ly6c2 | 2 |
+
+[MyGORelatedGenes.csv](Mouse%20Genome%20Sequence/MyGORelatedGenes%201.csv)
+
+### Immune Pathway
+
+|  | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust | qvalue | geneID | Count |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | 3/28 | 24/27982 | 1,79E+08 | 408.977.248.401.737 | 264.257.582.385.121 | Rps29/Zwint/Rps9 | 3 |
+
+[MyImmunePathwayRelatedGenes.csv](Mouse%20Genome%20Sequence/MyImmunePathwayRelatedGenes%201.csv)
+
+```bash
+1700049L16Rik
+Zwint
+Rab10os
+Rps29
+Zfp825
+Gm46430
+Ube2e2
+Gm2237
+Ly6c1
+Ly6c2
+2700054A10Rik
+Tcte2
+Crisp1
+Fech
+Gad2
+Apbb1ip
+Lrrc4c
+Vps45
+Jak1
+E130102H24Rik
+Tmem125
+Cfap57
+Med13l
+4930413E15Rik
+Kntc1
+Hcar2
+Rprl1
+Rpia
+Chl1
+Rps9
+Trim30a
+Mir101c
+4933422A05Rik
+Cdon
+```
+
+![venn_result5347.png](Mouse%20Genome%20Sequence/venn_result5347.png)
+
+### Important Genes Brief Explanation
 
 | Gene Name | Detail  |
 | --- | --- |
@@ -155,53 +297,70 @@ More than one genes are showing us the NF-κB pathway regulation that plays a ke
 | CCM2 | The protein is required for normal cytoskeletal structure, cell-cell interactions, and lumen formation in endothelial cells. Mutations in this gene result in cerebral cavernous malformations. |
 | Cav2 | The protein encoded by this gene is a major component of the inner surface of caveolae, small invaginations of the plasma membrane, and is involved in essential cellular functions, including signal transduction, lipid metabolism, cellular growth control and apoptosis. |
 | Klf6 | This gene encodes a member of the Kruppel-like family of transcription factors. The zinc finger protein is a transcriptional activator, and functions as a tumor suppressor. Multiple transcript variants encoding different isoforms have been found for this gene, some of which are implicated in carcinogenesis. |
-| Scmh1 | a Protein Coding gene |
 | Cox5a | enzyme of the mitochondrial respiratory chain. |
 | Fer | It regulates cell-cell adhesion and mediates signaling from the cell surface to the cytoskeleton via growth factor receptors. |
 | Axin2 | Regulation of ß-catenin, maped to a region that shows frequent loss of heterozygosity in breast cancer, neuroblastoma, and other tumors. Mutations in this gene have been associated with colorectal cancer with defective mismatch repair. |
-| Pih1d2 | a Protein Coding gene |
 | Ccnd2 | This protein has been shown to interact with and be involved in the phosphorylation of tumor suppressor protein Rb. |
 | Slfn4 | In malignant melanoma cells, gene expression is up-regulated in response to interferon alpha. |
 | Trim25 | regulation of antiviral innate immunity |
-| Abhd15
- | Gene Ontology (GO) annotations related to this gene include hydrolase activity
-. |
-| Stk11 | The STK11
- gene (also called LKB1) provides instructions for making an enzyme called serine/threonine kinase 11. This enzyme is a tumor suppressor, which means that it helps keep cells from growing and dividing too fast or in an uncontrolled way.        This kinase also promotes a type of programmed cell death known as apoptosis. |
+| Stk11 | Provides instructions for making an enzyme called serine/threonine kinase 11. This enzyme is a tumor suppressor, which means that it helps keep cells from growing and dividing too fast or in an uncontrolled way. This kinase also promotes a type of programmed cell death known as apoptosis. |
 | Ddx3x
  | The downstream genes of DDX3X-SP1-mediated transactivation include P21, KRAS, and MDM2 which are critical for cancer development and progression. DDX3X also interacts with YY1 to facilitate the transcription of genes involved in WNT/β-catenin signalling  |
 | S100a6 | Growth Factor-Inducible Protein 2A9 (calcium binding protein) |
-| Paf1 | The PAF1 complex interacts with RNA polymerase II and plays a role in transcription elongation as well as histone modifications including ubiquitylation and methylation |
 | Dnase2a
  | The protein, located in the lysosome, hydrolyzes DNA under acidic conditions and mediates the breakdown of DNA during erythropoiesis and apoptosis. |
-| Slbp
- | Histone Binding Protein |
-| Sgta
- | Viral Protein U-Binding Protein |
 | CD44 | The protein encoded by this gene is a cell-surface glycoprotein involved in cell-cell interactions, and may be related to tumor metastasis. |
+
+### My explanation about the findings
+
+![Untitled](Mouse%20Genome%20Sequence/Untitled%204.png)
+
+After the differentially expressioned genes and  variated genes enriched genes and their functions uniting under 3 diffirent and connected functions.
+
+According these imformation these functions are Cell fate controll and apoptosis , Cell growth factors and controls, Cariokinesis and tumor supressors.
+
+And also i found these genes union under a pathway which is WNT/ß -cateinin pathway.
+
+Cav2 gene effect apoptosis and cellular growth and also Klf6 gene has functions as  tumor suppressors. Down regulaton of this gene could be main reason of nicotine effect in cigarette smoke on carcinogenesis. This substance has potential role on broke one of these mechanisms or both. They are crucial even them self alone for establishing carcinogenesis. We can see in table there is also fer has an effect on cell growth mechanizm this is also proving for cav2 gene's diferential expression truthness which since this gene has also effect on growth mechanizm of cell. 
+
+Moreover Axin2 gene has an effect on regulation of ß-cateninin mechanism since ß-cateinin has an active role of heteroygosity and this pathway also has an important role for patterning and fate determination of cell. And also this pathway’s relation with colon cancer and melanoma has been identified.
+
+Wnt/ß-cateinin pathway is implicated with tissue homeostasis, and tissue regeneration. In human cancers this pathway highly activated.
+
+Also β-catenin related with NF-κB pathway activity. The NF-κB pathway regulation that plays a key role in regulating the immune response to infection. Incorrect regulation of NF-κB has been linked to cancer, inflammatory and [autoimmune diseases](https://en.wikipedia.org/wiki/Autoimmune_diseases), [septic shock](https://en.wikipedia.org/wiki/Septic_shock), [viral infection](https://en.wikipedia.org/wiki/Viral_infection), and improper immune development.
+
+In de genes enrichment i found some results that pointing directly nicotine toxisity.
 
 ### Comparation of my results and paper
 
 > AKT/GSK3α/β signaling is involved in behavioral abnormalities mediated by the second class of dopamine receptors (D2s). So the expression level of protein AKT, GSK3α/β and the D2s were detected by western blot.
 > 
 
-GSK3α/β signaling pathway related with wnt/ß-cateinin
+GSK3α/β signaling pathway related with wnt/ß-cateinin.Acording to the paper of this data cigarette smoke causes apoptosis in germ cells which in the testis and nicotine which is most toxic chemical in cigarette smoke also affects telomerase damage of chrosomes.  And also they found  mitocondrial hyperactivity and hypermethylation. I also found some genes related activity with hypermethylation which is PAF1 gene and also i found Cox5a gene has related activity at mithocondrial path. They also found some extra and moreimportant results with wetlab tests such as additional western blot test in liver of child mouse.
 
-Acording to the paper of this data cigarette smoke causes apoptosis in germ cells which in the testis and nicotine which is most toxic chemical in cigarette smoke also affects telomerase damage of chrosomes. 
-
-I found similar results but i coulnt come up with this result without any additional wetlab test.
+I found similar results but i coulnt come up with whole result like  the paper’s result without doing any additional wetlab test.
 
 ### Where did i get this data?
 
+![Untitled](Mouse%20Genome%20Sequence/Untitled%205.png)
+
 I get both normal and data from same prjna , PRJNA648845; GEO: GSE155145
+
+The project data has 4 samples; 2 for control and 2 for nicotine threated. They growth a male mouse and later growthing process they collect spermatozoa cells. And send them for RNA-seq with Illumina. All of these sample has single end and has 100bp. 
+
+After i checked this samples under fastqc and krona tool i found  that this data has highly contaminated with homonidae,clamidia. Musmusculus part of data averagely %55, GC content was not stable, some adapter contamination involved and also much of duplicated sequences included. After i cleaned the data with Truseq adapters by Flexbar. I fixed some of these problems. 
+
+In this project and paper also related with  child mouse rna-seq data and some additional wetlab results. 
 
 ### What is my url for data
 
-[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE155145](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA648845)
+[BioProject](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA648845)
 
-Mouse spermatoza control vs nicotine threatment
+[Paternal nicotine exposure promotes hepatic fibrosis in offspring](https://www.sciencedirect.com/science/article/pii/S0378427421000618)
 
 ### Why did i choose this data?
+
+I want to see with my own eyes how nicotine effect body in molecular way
 
 ## TruSeq DNA and RNA CD Indexes
 
@@ -285,7 +444,7 @@ multiqc .
 open multiqc_report.html
 ```
 
-[default_multiqc_report.html](data/multiqc_report%202.html)
+[default_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%202.html)
 
 | Sample Name | % Dups | % GC | M Seqs |
 | --- | --- | --- | --- |
@@ -296,21 +455,21 @@ open multiqc_report.html
 
 ### Results
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1.png)
+![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1.png)
 
-![mqc_fastqc_overrepresented_sequences_plot_1.png](data/mqc_fastqc_overrepresented_sequences_plot_1.png)
+![mqc_fastqc_overrepresented_sequences_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_overrepresented_sequences_plot_1.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1.png)
 
 ## Trim DATA
 
@@ -352,31 +511,31 @@ multiqc . -p
 
 ```
 
-[trimmed_multiqc_report.html](data/multiqc_report%203.html)
+[trimmed_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%203.html)
 
 ### Results
 
-![mqc_fastqc_sequence_length_distribution_plot_1.png](data/mqc_fastqc_sequence_length_distribution_plot_1.png)
+![mqc_fastqc_sequence_length_distribution_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_length_distribution_plot_1.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1%201.png)
+![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1%201.png)
 
-![mqc_fastqc_overrepresented_sequences_plot_1.png](data/mqc_fastqc_overrepresented_sequences_plot_1%201.png)
+![mqc_fastqc_overrepresented_sequences_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_overrepresented_sequences_plot_1%201.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1%201.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1%201.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1%201.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1%201.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts%201.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts%201.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Percentages.png](data/mqc_fastqc_per_sequence_gc_content_plot_Percentages.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Percentages.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Percentages.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1%201.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1%201.png)
 
-![mqc_fastqc_sequence_counts_plot_1.png](data/mqc_fastqc_sequence_counts_plot_1.png)
+![mqc_fastqc_sequence_counts_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1.png)
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc%201.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc%201.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1%201.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1%201.png)
 
 ### Trimming with Flexbar2
 
@@ -652,7 +811,7 @@ furkankykc@furkankykc:~/workspace/rnaseq/alignments/hisat2/mice/merged$ samtools
 
 ### Report
 
-[merged_multiqc_report.html](data/multiqc_report%201.html)
+[merged_multiqc_report.html](Mouse%20Genome%20Sequence/multiqc_report%201.html)
 
 ```bash
 mkdir report
@@ -664,23 +823,23 @@ multiqc .
 
 ### Results
 
-![mqc_fastqc_sequence_counts_plot_1_pc.png](data/mqc_fastqc_sequence_counts_plot_1_pc%202.png)
+![mqc_fastqc_sequence_counts_plot_1_pc.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1_pc%202.png)
 
-![mqc_fastqc_sequence_counts_plot_1.png](data/mqc_fastqc_sequence_counts_plot_1%201.png)
+![mqc_fastqc_sequence_counts_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_counts_plot_1%201.png)
 
-![mqc_fastqc_adapter_content_plot_1.png](data/mqc_fastqc_adapter_content_plot_1%202.png)
+![mqc_fastqc_adapter_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_adapter_content_plot_1%202.png)
 
-![mqc_fastqc_per_base_n_content_plot_1.png](data/mqc_fastqc_per_base_n_content_plot_1%202.png)
+![mqc_fastqc_per_base_n_content_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_n_content_plot_1%202.png)
 
-![mqc_fastqc_per_base_sequence_quality_plot_1.png](data/mqc_fastqc_per_base_sequence_quality_plot_1%202.png)
+![mqc_fastqc_per_base_sequence_quality_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_base_sequence_quality_plot_1%202.png)
 
-![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](data/mqc_fastqc_per_sequence_gc_content_plot_Counts%202.png)
+![mqc_fastqc_per_sequence_gc_content_plot_Counts.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_gc_content_plot_Counts%202.png)
 
-![mqc_fastqc_per_sequence_quality_scores_plot_1.png](data/mqc_fastqc_per_sequence_quality_scores_plot_1%202.png)
+![mqc_fastqc_per_sequence_quality_scores_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_per_sequence_quality_scores_plot_1%202.png)
 
-![mqc_fastqc_sequence_duplication_levels_plot_1.png](data/mqc_fastqc_sequence_duplication_levels_plot_1%202.png)
+![mqc_fastqc_sequence_duplication_levels_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_duplication_levels_plot_1%202.png)
 
-![mqc_fastqc_sequence_length_distribution_plot_1.png](data/mqc_fastqc_sequence_length_distribution_plot_1%201.png)
+![mqc_fastqc_sequence_length_distribution_plot_1.png](Mouse%20Genome%20Sequence/mqc_fastqc_sequence_length_distribution_plot_1%201.png)
 
 ## Stringtie Annotation
 
@@ -765,7 +924,7 @@ ENSMUSG00000103025      Gm37686 1       -       3464977 3467285 0.227314        
 
 ### Creating expression matrix
 
-[stringtie_expression_matrix.pl](data/stringtie_expression_matrix.pl)
+[stringtie_expression_matrix.pl](Mouse%20Genome%20Sequence/stringtie_expression_matrix.pl)
 
 ```bash
 cd $RNA_HOME/expression/$DATA_NAME/stringtie/ref_only/
@@ -858,7 +1017,7 @@ wget https://raw.githubusercontent.com/griffithlab/rnaseq_tutorial/master/script
 chmod +x Tutorial_Part1_balgown.R
 ```
 
-[Tutorial_Part1_ballgown.R](data/Tutorial_Part1_ballgown%201.r)
+[Tutorial_Part1_ballgown.R](Mouse%20Genome%20Sequence/Tutorial_Part1_ballgown%201.r)
 
 ```bash
 **grep -v feature SLN_vs_NCT_gene_results.tsv | wc -l**
@@ -1017,17 +1176,17 @@ cut -f 2 $RNA_HOME/de/$DATA_NAME/htseq_counts/DE_genes.txt | sort > htseq_counts
 
 ```
 
-[Tutorial_edgeR.R](data/Tutorial_edgeR%201.r)
+[Tutorial_edgeR.R](Mouse%20Genome%20Sequence/Tutorial_edgeR%201.r)
 
-[DE_genes.txt](data/DE_genes.txt)
+[DE_genes.txt](Mouse%20Genome%20Sequence/DE_genes.txt)
 
-[ballgown_DE_gene_symbols.txt](data/ballgown_DE_gene_symbols.txt)
+[ballgown_DE_gene_symbols.txt](Mouse%20Genome%20Sequence/ballgown_DE_gene_symbols.txt)
 
-[htseq_counts_edgeR_DE_gene_symbols.txt](data/htseq_counts_edgeR_DE_gene_symbols.txt)
+[htseq_counts_edgeR_DE_gene_symbols.txt](Mouse%20Genome%20Sequence/htseq_counts_edgeR_DE_gene_symbols.txt)
 
 ### Result as Venn Diagram
 
-![edgeR_vs_balgown.jpeg](data/edgeR_vs_balgown.jpeg)
+![edgeR_vs_balgown.jpeg](Mouse%20Genome%20Sequence/edgeR_vs_balgown.jpeg)
 
 ## Kallisto
 
@@ -1148,7 +1307,7 @@ chmod +x kallisto_gene_matrix.pl
 ./kallisto_gene_matrix.pl --gtf_file=$REF_GTF  --kallisto_transcript_matrix_in=transcript_tpms_all_samples.tsv --kallisto_transcript_matrix_out=gene_tpms_all_samples.tsv
 ```
 
-[Tutorial_comparisons.R](data/Tutorial_comparisons.r)
+[Tutorial_comparisons.R](Mouse%20Genome%20Sequence/Tutorial_comparisons.r)
 
 ```bash
 cd $RNA_HOME/expression/$DATA_NAME
@@ -1157,7 +1316,7 @@ chmod +x Tutorial_comparisons.R
 
 ```
 
-[Tutorial_comparisons.pdf](data/Tutorial_comparisons.pdf)
+[Tutorial_comparisons.pdf](Mouse%20Genome%20Sequence/Tutorial_comparisons.pdf)
 
 ### Make custom DB
 
@@ -1206,11 +1365,11 @@ chmod +x Tutorial_KallistoSleuth.R
 Rscript -e "remotes::install_github("pachterlab/sleuth#260")"
 ```
 
-[SleuthResults.pdf](data/SleuthResults%201.pdf)
+[SleuthResults.pdf](Mouse%20Genome%20Sequence/SleuthResults%201.pdf)
 
-[Tutorial_comparisons.pdf](data/Tutorial_comparisons%201.pdf)
+[Tutorial_comparisons.pdf](Mouse%20Genome%20Sequence/Tutorial_comparisons%201.pdf)
 
-[myanno.mm10_multianno.tsv](data/myanno.mm10_multianno.tsv)
+[myanno.mm10_multianno.tsv](Mouse%20Genome%20Sequence/myanno.mm10_multianno.tsv)
 
 ## **Reference Guided Transcript Assembly**
 
@@ -1673,9 +1832,9 @@ Chr     Start   End     Ref     Alt     Func.refGene    Gene.refGene    GeneDeta
 
 ## Gene Enrichment
 
-[top_sig_genes.R](data/top_sig_genes%201.r)
+[top_sig_genes.R](Mouse%20Genome%20Sequence/top_sig_genes%201.r)
 
-[gene_enrichment.R](data/gene_enrichment.r)
+[gene_enrichment.R](Mouse%20Genome%20Sequence/gene_enrichment.r)
 
 ```bash
 cd $RNA_HOME/de/$DATA_NAME/ballgown/ref_only/enrichment
@@ -1705,196 +1864,42 @@ keggEnrich<-enrichKEGG(gene= yourEntrezIdList,organism= "mmu",pAdjustMethod="BH"
 write.csv(keggEnrich,"MyKEGGRelatedGenes.csv")
 ```
 
-## De genes
-
-### Gene Ontology
-
-|  | ONTOLOGY | ID | Description | GeneRatio | BgRatio |
-| --- | --- | --- | --- | --- | --- |
-| GO:0032331 | BP | GO:0032331 | negative regulation of chondrocyte differentiation | 2/18 | 24/29008 |
-| GO:0061037 | BP | GO:0061037 | negative regulation of cartilage development | 2/18 | 31/29008 |
-| GO:0048306 | MF | GO:0048306 | calcium-dependent protein binding | 2/17 | 95/28438 |
-| GO:0050786 | MF | GO:0050786 | RAGE receptor binding | 1/17 | 10/28438 |
-| GO:0098879 | MF | GO:0098879 | structural constituent of postsynaptic specialization | 1/17 | 10/28438 |
-| GO:0034511 | MF | GO:0034511 | U3 snoRNA binding | 1/17 | 11/28438 |
-| GO:0097677 | MF | GO:0097677 | STAT family protein binding | 1/17 | 11/28438 |
-| GO:0044548 | MF | GO:0044548 | S100 protein binding | 1/17 | 14/28438 |
-| GO:0047372 | MF | GO:0047372 | acylglycerol lipase activity | 1/17 | 14/28438 |
-| GO:0005523 | MF | GO:0005523 | tropomyosin binding | 1/17 | 15/28438 |
-| GO:0015556 | MF | GO:0015556 | C4-dicarboxylate transmembrane transporter activity | 1/17 | 15/28438 |
-| GO:0030228 | MF | GO:0030228 | lipoprotein particle receptor activity | 1/17 | 16/28438 |
-| GO:0015172 | MF | GO:0015172 | acidic amino acid transmembrane transporter activity | 1/17 | 17/28438 |
-| GO:0070034 | MF | GO:0070034 | telomerase RNA binding | 1/17 | 17/28438 |
-| GO:0030169 | MF | GO:0030169 | low-density lipoprotein particle binding | 1/17 | 20/28438 |
-| GO:0099186 | MF | GO:0099186 | structural constituent of postsynapse | 1/17 | 20/28438 |
-| GO:0046965 | MF | GO:0046965 | retinoid X receptor binding | 1/17 | 22/28438 |
-| GO:0001227 | MF | GO:0001227 | DNA-binding transcription repressor activity, RNA polymerase II-specific | 2/17 | 328/28438 |
-| GO:0061629 | MF | GO:0061629 | RNA polymerase II-specific DNA-binding transcription factor binding | 2/17 | 329/28438 |
-| GO:0001217 | MF | GO:0001217 | DNA-binding transcription repressor activity | 2/17 | 330/28438 |
-| GO:0005310 | MF | GO:0005310 | dicarboxylic acid transmembrane transporter activity | 1/17 | 29/28438 |
-| GO:0071813 | MF | GO:0071813 | lipoprotein particle binding | 1/17 | 30/28438 |
-| GO:0071814 | MF | GO:0071814 | protein-lipid complex binding | 1/17 | 30/28438 |
-| GO:0098918 | MF | GO:0098918 | structural constituent of synapse | 1/17 | 30/28438 |
-| GO:0030515 | MF | GO:0030515 | snoRNA binding | 1/17 | 32/28438 |
-| GO:0016831 | MF | GO:0016831 | carboxy-lyase activity | 1/17 | 33/28438 |
-| GO:0042974 | MF | GO:0042974 | retinoic acid receptor binding | 1/17 | 33/28438 |
-| GO:0003729 | MF | GO:0003729 | mRNA binding | 2/17 | 366/28438 |
-
-[MyGORelatedGenes.csv](data/MyGORelatedGenes.csv)
-
-### Immune Pathway
-
-|  | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust |
-| --- | --- | --- | --- | --- | --- | --- |
-| LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD4_T-CELL_DIFF_Entrez | 4/19 | 232/27982 | 1,62E+09 | 162.133.005.763.331 |
-| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | 4/19 | 238/27982 | 1,79E+09 | 162.133.005.763.331 |
-| LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | LIT_MM_PELLEGATTA_GL261-NS_VS_GL261-AC_TUMOR_DN_Entrez | 4/19 | 278/27982 | 3,29E+09 | 162.133.005.763.331 |
-| GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | GO_BP_MM_NEGATIVE_REGULATION_OF_CHONDROCYTE_DIFFERENTIATION_Entrez | 2/19 | 13/27982 | 3,39E+09 | 162.133.005.763.331 |
-| LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_DIFFERENTIATION_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | 3/19 | 108/27982 | 5,18E+09 | 16.505.253.500.348 |
-| LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | LIT_MM_TIMMONS_WHITE-BROWN-PREADIPOCYTE-OVERLAP_DN_Entrez | 3/19 | 108/27982 | 5,18E+09 | 16.505.253.500.348 |
-| LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | LIT_MM_BERGER_DIETARY-LC-PUFAS_HIPPOCAMPUS_DIFF_Entrez | 2/19 | 22/27982 | 100.087.066.057.948 | 225.660.143.606.635 |
-| LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | LIT_MM_OWENS_TUMOR_VS_LUTEOMA_DN_Entrez | 2/19 | 23/27982 | 109.574.787.466.472 | 225.660.143.606.635 |
-| MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_BASIOCCIPITAL_BONE_MORPHOLOGY_Entrez | 2/19 | 23/27982 | 109.574.787.466.472 | 225.660.143.606.635 |
-| GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | GENESIGDB_MM_BAR-ON_10_DENDRITIC_CELLS_4_Entrez | 2/19 | 25/27982 | 129.825.396.426.411 | 225.660.143.606.635 |
-| MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_THYROID_CARTILAGE_MORPHOLOGY_Entrez | 2/19 | 25/27982 | 129.825.396.426.411 | 225.660.143.606.635 |
-| LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | LIT_MM_KRAMER_C9_SACCULAR_ALVEOLAR_TIMEPOINTS_UP_Entrez | 2/19 | 28/27982 | 163.381.419.354.902 | 255.696.714.305.104 |
-| MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | MSIGDB_MM_LIANG_HEMATOPOIESIS_STEM_CELL_NUMBER_SMALL_VS_HUGE_DN_Entrez | 2/19 | 31/27982 | 200.741.108.450.559 | 255.696.714.305.104 |
-| LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | LIT_MM_SCHEBESTA_PAX5_VS_PAX5_PRO-B-CELL_DIFF_Entrez | 3/19 | 172/27982 | 205.694.496.361.179 | 255.696.714.305.104 |
-| LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | LIT_MM_SCHOENFELDER_RNA-FISH-HBA-HBB-CO-LOCALIZATIO-GENE_DIFF_Entrez | 2/19 | 32/27982 | 214.037.178.197.889 | 255.696.714.305.104 |
-| LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | LIT_MM_HOKI_XXIVS-TS_XX-TS_BEFORE-DIFFERENT_X-LINKED_UP_Entrez | 2/19 | 34/27982 | 241.890.473.519.466 | 255.696.714.305.104 |
-| LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | LIT_MM_CASTELLANO_H-RAS_VS_N-RAS_SERUM-STIMULATION-8H_G1_UP_Entrez | 2/19 | 35/27982 | 256.446.665.904.636 | 255.696.714.305.104 |
-| LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | LIT_MM_CHEN_FOXP3-SCURFY-MUTATION_DIABETES_UP_Entrez | 3/19 | 188/27982 | 267.165.851.354.928 | 255.696.714.305.104 |
-| LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | LIT_MM_SOHN_E13.5-DAY-IVD_DIFF_Entrez | 3/19 | 192/27982 | 284.191.830.283.576 | 255.696.714.305.104 |
-| GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | GO_BP_MM_ENDODERM_DEVELOPMENT_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
-| GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | GO_MF_MM_CALCIUM-DEPENDENT_PROTEIN_BINDING_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
-| LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | LIT_MM_GETNET_AG-TUMOR_AG-SELF_CD4-T-CELL_DN_Entrez | 2/19 | 39/27982 | 318.856.367.164.809 | 255.696.714.305.104 |
-| LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | LIT_MM_AUGUSTUS_CAV1KO_HEART_UP_Entrez | 2/19 | 41/27982 | 352.564.970.955.604 | 255.696.714.305.104 |
-| MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | MSIGDB_MM_HARRIS_BRAIN_CANCER_PROGENITORS_Entrez | 2/19 | 41/27982 | 352.564.970.955.604 | 255.696.714.305.104 |
-| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_4D_8D_DN_Entrez | 3/19 | 207/27982 | 35.425.869.349.625 | 255.696.714.305.104 |
-| LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | LIT_MM_KUCZMA_SCURFY-INTERACTION_DIFF_Entrez | 2/19 | 42/27982 | 370.043.412.778.939 | 255.696.714.305.104 |
-| LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | LIT_MM_HSIAO_VAMPIRE_THIAZOLIDINEDIONE_DN_Entrez | 2/19 | 43/27982 | 387.937.263.978.706 | 255.696.714.305.104 |
-| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_DN_Entrez | 3/19 | 215/27982 | 395.795.315.809.214 | 255.696.714.305.104 |
-| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_7D_4D_UNIQUE_DN_Entrez | 3/19 | 215/27982 | 395.795.315.809.214 | 255.696.714.305.104 |
-| LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | LIT_MM_TIMMONS_WHITE-PREADIPOCYTE_4D_8D_DN_Entrez | 3/19 | 216/27982 | 401.197.773.491.271 | 255.696.714.305.104 |
-| LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | LIT_MM_TIMMONS_BROWN-PREADIPOCYTE_7D_4D_DN_Entrez | 3/19 | 224/27982 | 446.136.878.457.423 | 268.639.778.576.479 |
-| GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | GENESIGDB_MM_HOUTEN_07_BREAST_VAN_Entrez | 2/19 | 47/27982 | 463.656.521.601.664 | 268.639.778.576.479 |
-| LIT_MM_GENNET_FP-DMRT5_UP_Entrez | LIT_MM_GENNET_FP-DMRT5_UP_Entrez | LIT_MM_GENNET_FP-DMRT5_UP_Entrez | 2/19 | 47/27982 | 463.656.521.601.664 | 268.639.778.576.479 |
-| MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | MSIGDB_MM_BURTON_ADIPOGENESIS_7_Entrez | 2/19 | 49/27982 | 503.995.305.816.013 | 28.342.324.256.477 |
-| GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | GO_BP_MM_MULTICELLULAR_ORGANISM_GROWTH_Entrez | 2/19 | 54/27982 | 612.040.421.471.533 | 334.348.938.815.306 |
-| LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | LIT_MM_BU_DIABETIC-APOE-NULL_NON-DIABETIC-APOE-NULL_DIFF_Entrez | 2/19 | 57/27982 | 681.783.036.602.556 | 346.045.913.474.297 |
-| LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24L_24C_MOCK_TRANSFECTION_DN_Entrez | 3/19 | 260/27982 | 688.254.548.398.153 | 346.045.913.474.297 |
-| LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | LIT_MM_LACAZE_CLUSTER1_24R_24C_MOCK_TRANSFECTION_DN_Entrez | 3/19 | 260/27982 | 688.254.548.398.153 | 346.045.913.474.297 |
-| LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | LIT_MM_LIEDTKE_SODIUM-DEPLETION_UP_Entrez | 2/19 | 58/27982 | 705.846.790.036.484 | 346.045.913.474.297 |
-| LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | LIT_MM_BARCO_HIPPOCAMPUS_VP16-CREB-MICE_UP_Entrez | 2/19 | 59/27982 | 730.317.807.667.471 | 349.091.912.065.051 |
-| MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | MSIGDB_MM_MARSON_FOXP3_TARGETS_UP_Entrez | 2/19 | 62/27982 | 806.169.394.501.984 | 375.950.215.192.145 |
-| MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | MPO_MM_ABNORMAL_CARDIOVASCULAR_SYSTEM_MORPHOLOGY_Entrez | 2/19 | 64/27982 | 858.764.187.078.662 | 390.942.172.784.381 |
-| LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | LIT_MM_AIDINIS_SUBTRACTIVE-LIBRARIES_WHOLE-JOINT_RHEUMATOID-ARTHRITIS_UP_Entrez | 2/19 | 66/27982 | 912.975.934.855.998 | 396.729.542.601.061 |
-| REACTOME_MM_ARR3_PATHWAY_Entrez | REACTOME_MM_ARR3_PATHWAY_Entrez | REACTOME_MM_ARR3_PATHWAY_Entrez | 2/19 | 66/27982 | 912.975.934.855.998 | 396.729.542.601.061 |
-| LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | LIT_MM_PRIDANS_PAX5_PRO-B-CELL_DN_Entrez | 2/19 | 67/27982 | 940.686.910.404.564 | 399.687.416.154.117 |
-| LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | LIT_MM_BLOMBERG_ITK-ANTI-CD3_ITK-ANTI-CD3_CD28_CSA-ANTI-CD3-ANTI-CD3_CSA-ANTI-CD3_CD28-ANTI-CD3_CD28_CD3-T-CELL_UP_Entrez | 2/19 | 71/27982 | 10.555.531.187.857 | 438.742.948.503.971 |
-| LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | LIT_MM_OUYANG_FOXO1-DE_CD8_T-CELL_DIFF_Entrez | 3/19 | 309/27982 | 113.338.320.980.832 | 459.921.696.157.712 |
-| LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | LIT_MM_OLIVER_6H_DN_Entrez | 3/19 | 311/27982 | 11.546.151.367.976 | 459.921.696.157.712 |
-| LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | LIT_MM_BONOW_HIPPOCAMPUS_LPS_UP_Entrez | 2/19 | 78/27982 | 12.719.778.439.275 | 496.330.946.446.811 |
-
-[MyImmunePathwayRelatedGenes.csv](data/MyImmunePathwayRelatedGenes.csv)
-
-## Variation
-
-### Gene Ontology
-
-|  | ONTOLOGY | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust | qvalue | geneID | Count |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| GO:0030550 | MF | GO:0030550 | acetylcholine receptor inhibitor activity | 2/29 | 15/28438 | 104.565.565.789.105 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
-| GO:0033130 | MF | GO:0033130 | acetylcholine receptor binding | 2/29 | 21/28438 | 208.338.756.652.197 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
-| GO:0030548 | MF | GO:0030548 | acetylcholine receptor regulator activity | 2/29 | 25/28438 | 296.874.735.960.676 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
-| GO:0099602 | MF | GO:0099602 | neurotransmitter receptor regulator activity | 2/29 | 25/28438 | 296.874.735.960.676 | 467.577.709.138.065 | 343.749.694.270.257 | Ly6c1/Ly6c2 | 2 |
-| GO:0030547 | MF | GO:0030547 | signaling receptor inhibitor activity | 2/29 | 37/28438 | 654.080.587.639.407 | 824.141.540.425.653 | 605.885.175.918.609 | Ly6c1/Ly6c2 | 2 |
-
-[MyGORelatedGenes.csv](data/MyGORelatedGenes%201.csv)
-
-### Immune Pathway
-
-|  | ID | Description | GeneRatio | BgRatio | pvalue | p.adjust | qvalue | geneID | Count |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | REACTOME_MM_RPS27_PATHWAY_Entrez | 3/28 | 24/27982 | 1,79E+08 | 408.977.248.401.737 | 264.257.582.385.121 | Rps29/Zwint/Rps9 | 3 |
-
-[MyImmunePathwayRelatedGenes.csv](data/MyImmunePathwayRelatedGenes%201.csv)
-
-```bash
-1700049L16Rik
-Zwint
-Rab10os
-Rps29
-Zfp825
-Gm46430
-Ube2e2
-Gm2237
-Ly6c1
-Ly6c2
-2700054A10Rik
-Tcte2
-Crisp1
-Fech
-Gad2
-Apbb1ip
-Lrrc4c
-Vps45
-Jak1
-E130102H24Rik
-Tmem125
-Cfap57
-Med13l
-4930413E15Rik
-Kntc1
-Hcar2
-Rprl1
-Rpia
-Chl1
-Rps9
-Trim30a
-Mir101c
-4933422A05Rik
-Cdon
-```
-
-![venn_result5347.png](data/venn_result5347.png)
-
 ### Plots
 
-![Untitled](data/Untitled%204.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%206.png)
 
-![Untitled](data/Untitled%205.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%207.png)
 
-![Untitled](data/Untitled%206.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%208.png)
 
-![Untitled](data/Untitled%207.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%209.png)
 
-![Untitled](data/Untitled%208.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2010.png)
 
-![Untitled](data/Untitled%209.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2011.png)
 
-![Untitled](data/Untitled%2010.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2012.png)
 
-![Untitled](data/Untitled%2011.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2013.png)
 
-![Untitled](data/Untitled%2012.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2014.png)
 
-![Untitled](data/Untitled%2013.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2015.png)
 
-![Untitled](data/Untitled%2014.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2016.png)
 
-![Untitled](data/Untitled%2015.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2017.png)
 
-![Untitled](data/Untitled%2016.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2018.png)
 
-![Untitled](data/Untitled%2017.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2019.png)
 
-![Untitled](data/Untitled%2018.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2020.png)
 
-![Untitled](data/Untitled%2019.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2021.png)
 
-![Untitled](data/Untitled%2020.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2022.png)
 
-![Untitled](data/Untitled%2021.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2023.png)
 
-![Untitled](data/Untitled%2022.png)
+![Untitled](Mouse%20Genome%20Sequence/Untitled%2024.png)
